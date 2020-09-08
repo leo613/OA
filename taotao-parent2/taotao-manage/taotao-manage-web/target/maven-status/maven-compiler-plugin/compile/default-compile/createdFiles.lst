@@ -1,0 +1,16 @@
+com\taotao\controller\ItemParamController.class
+com\taotao\datasource\DynamicDataSourceHolder.class
+com\taotao\controller\api\ApiItemController.class
+com\taotao\controller\PicUploadController.class
+com\taotao\controller\ItemParamItemController.class
+com\taotao\controller\api\ApiItemCatController.class
+com\taotao\controller\api\ApiContentController.class
+com\taotao\controller\api\ApiItemParamItemController.class
+com\taotao\controller\api\ApiContentCategoryController.class
+com\taotao\controller\ItemCatController.class
+com\taotao\controller\ContentCategoryController.class
+com\taotao\controller\ItemController.class
+com\taotao\controller\PagerController.class
+com\taotao\datasource\DataSourceAspect.class
+com\taotao\datasource\DynamicDataSource.class
+com\taotao\controller\ContentController.class

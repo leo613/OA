@@ -1,0 +1,7 @@
+com\taotao\order\query\controller\OrderController.class
+com\taotao\order\query\dao\OrderDAO.class
+com\taotao\order\query\mapper\IMapper.class
+com\taotao\order\query\dao\IOrder.class
+com\taotao\order\query\job\PaymentOrderJob.class
+com\taotao\order\query\service\OrderApiServiceImpl.class
+com\taotao\order\query\mapper\OrderMapper.class

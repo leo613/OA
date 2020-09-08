@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/rabbit
+       http://www.springframework.org/schema/rabbit/spring-rabbit.xsd">
+
+	<!--声明式工厂-->
+	<rabbit:connection-factory id="connectionFactory" port="${rabbitmq.port}" host="${rabitMq.host}" username="${rabitMq.username}" password="${rabitMq.password}" virtual-host="${rabitMq.virtual-host}" />
+
+	<!--MQ的管理,包括 队列 交换机管理器等  -->
+	<rabbit:admin connection-factory="connectionFactory"/>
+
+	<!--  用于声明和创建交换机，队列-->
+	<bean class="com.taotao.web.mq.handler.RabbitMqHandler" id="rabbitHanler"/>
+	<!--定义用于接收消息的队列  -->
+	<rabbit:queue name="taotao_web_queue" auto-declare="true" durable="true"/>
+
+	<rabbit:listener-container connection-factory="connectionFactory">
+		<rabbit:listener ref="rabbitHanler" method="hand" queue-names="taotao_web_queue"/>
+	</rabbit:listener-container>
+
+
+</beans>
