@@ -1,8 +1,0 @@
-com\taotao\order\query\util\ValidateUtil.class
-com\taotao\order\query\bean\OperaterEnum.class
-com\taotao\order\query\bean\Where.class
-com\taotao\order\query\api\OrderApiService.class
-com\taotao\order\query\bean\Order.class
-com\taotao\order\query\bean\OrderItem.class
-com\taotao\order\query\bean\OrderShipping.class
-com\taotao\order\query\bean\TaotaoResult.class
