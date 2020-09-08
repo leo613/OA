@@ -1,0 +1,39 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+    <hibernate-configuration>
+      <session-factory>
+          <!--todo MySQL数据库的配置 -->
+          <!--todo 1.数据库方法:告诉hibernate是什么数据库 -->
+          <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+
+          <!--todo 2.因为hibernate的sql语句是自动生成的 ,所有通过此配置来显示自动生成的sql语句输出 -->
+          <property name="hibernate.show_sql">true</property>
+
+          <!-- 格式化输出的sql语句： 看起来更加清楚   -->
+          <property name="hibernate.format_sql">true</property>
+
+          <!--todo 3.hibernate的表是自动创建的：
+               根据持久化类（User Book），自动创建持久化类对象的表
+               正是因为hibernate的表示根据持久化类自动创建的
+               所以持久化类才可以与数据库表直接映射。
+               update ： 如果持久化类对应的表不存在就自动创建,如果持久化类对应的表存在就不创建。
+          -->
+          <property name="hibernate.hbm2ddl.auto">update</property>
+
+          <property name="hibernate.current_session_context_class">org.springframework.orm.hibernate5.SpringSessionContext</property>
+
+          <!-- 配置持久化类的映射 -->
+          <mapping class="com.qd.oa.hrm.bean.Dept"/>
+          <mapping class="com.qd.oa.hrm.bean.Job"/>
+          <mapping class="com.qd.oa.indentity.bean.Popedom"/>
+          <mapping class="com.qd.oa.indentity.bean.Role"/>
+          <mapping class="com.qd.oa.indentity.bean.User"/>
+          <mapping class="com.qd.oa.menu.bean.Module"/>
+
+
+      </session-factory>
+
+    </hibernate-configuration>
+

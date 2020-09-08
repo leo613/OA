@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="./ehcache.xsd">
+	<!-- 缓存到硬盘的目录 -->
+	<diskStore path="c:\ehcache"/>
+	
+	<!-- 默认缓存
+		maxElementsInMemory 内存最大缓存的元素的个数
+		eternal 缓存是否永久有效
+		timeToIdleSeconds 缓存的最大空闲时间，单位为秒，如果设置了eternal=true,空闲时间就失效了
+		timeToLiveSeconds 缓存的存活时间，单位为秒，如果设置了eternal=true,存活时间就失效了
+		maxElementsOnDisk 硬盘允许最大缓存的元素个数
+		memoryStoreEvictionPolicy 当缓存达到最大值，要采取的策略
+			LRU 会清空最近少用的缓存对象
+			FIFO 先进先出，表示会清空最先缓存的那个对象
+			LFU 清空最常用的，在项目中基本不用
+		overflowToDisk当内存缓存的个数达到最大值，是否将缓存保存硬盘
+	 -->
+	<defaultCache
+		maxElementsInMemory="200"
+		eternal="false"
+		timeToIdleSeconds="3600"
+		timeToLiveSeconds="3600"
+		maxElementsOnDisk="1000"
+		memoryStoreEvictionPolicy="LRU"
+		overflowToDisk="true"/>
+	
+	
+	<cache name="myEchcache"
+		maxElementsInMemory="1"
+		eternal="true"
+		maxElementsOnDisk="1000"
+		memoryStoreEvictionPolicy="LRU"
+		overflowToDisk="true"/>
+</ehcache>

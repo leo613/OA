@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--todo 创建一个连接池 DataSources对象
+             c3p0其实默认会到类路径下寻找c3p0.properties文件
+            并且要求c3p0.properties文件中的key必须是以c3p0.开始的
+    -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"/>
+
+    <!--todo hibernate集成
+             spring应该加载Hibernate配置文件,得到一个SessionFactory
+             连接工厂:来自于连接池
+             Spring已经管理了Hibernate的连接工厂了
+  -->
+       <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean"
+          p:dataSource="dataSource"
+          p:configLocation="classpath:hibernate/hibernate.cfg.xml"
+       />
+
+
+</beans>

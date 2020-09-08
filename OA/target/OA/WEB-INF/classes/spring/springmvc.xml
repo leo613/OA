@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+    <!--todo 自动扫描该包，SpringMVC会将包下用了@controller注解的类注册为SpringMVC的controller -->
+    <context:component-scan base-package="com.qd.oa" use-default-filters="false">
+        <!-- 指定扫描哪些注解 -->
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+
+        <context:include-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice"/>
+    </context:component-scan>
+    <!--获取映射文件-->
+    <mvc:resources mapping="/script/**" location="/script/"/>
+    <!--<mvc:resources mapping="/resourcess/css/**" location="/css/"/>-->
+    <mvc:resources mapping="/images/**" location="/images"/>
+    <mvc:resources mapping="/resources/**" location="resources"/>
+     <mvc:annotation-driven conversion-service="conversionService"/>
+
+    <!--时期格式转换-->
+    <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+        <property name="converters">
+            <set>
+                <bean class="com.qd.oa.common.converter.StringToDate">
+                    <property name="patterns">
+                        <array>
+                            <value>yyyy-MM-dd</value>
+                            <value>yyyy/MM/dd</value>
+                            <value>yyyy-MM-dd HH:mm:ss</value>
+                        </array>
+                    </property>
+                </bean>
+            </set>
+        </property>
+    </bean>
+    <!--<mvc:annotation-driven conversion-service="conversionService"/>-->
+
+    <!--视图解析器-->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/pages/"/>
+        <property name="suffix" value=".jsp"/>
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+    </bean>
+
+    <!--配置异常的处理解析器-->
+    <bean id="exceptionCustomHandler" class="com.qd.oa.common.exception.ExceptionCustomHandler"/>
+    <!--
+          http：//127.0.0.1:8080/oa/login.jspx  ==>/WEB-INF/JSP/login.jsp
+    -->
+    <mvc:view-controller path="/login/login.jspx"/>
+
+    <!--配置拦截器-->
+<mvc:interceptors>
+    <mvc:interceptor>
+        <mvc:mapping path="/**"/>
+        <!--todo 排除以下拦截对象-->
+        <mvc:exclude-mapping path="/createCode.jspx"/>
+        <mvc:exclude-mapping path="/login/login.jspx"/>
+        <mvc:exclude-mapping path="/user/ajaxLogin.jspx"/>
+        <bean class="com.qd.oa.common.util.Interceptor.loginInterceptor"/>
+    </mvc:interceptor>
+</mvc:interceptors>
+
+    <!--缓存管理器-->
+    <bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+        <property name="cacheManagerConfigFile" value="classpath:/ehcache.xml"/>
+    </bean>
+
+</beans>

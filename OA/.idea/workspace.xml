@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5aed0fa6-f1a2-4f08-b6dc-3463d49e10f6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL for 5.1 - oa_test@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="OA" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.5.4" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-DarcheTypeCatalog=internal" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1VgbCj40ImKLqy5jmWPYVCr0AI2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="glyphicon-yen&#9;null&#9;null&#10;standardContext&#9;PSI&#9;JAVA://org.springframework.expression.spel.support.StandardEvaluationContext" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\JAVA\review\project\OA\src\main\resources\ehcache" />
+      <recent name="I:\JAVA\review\project\OA\src\main\webapp\resources" />
+      <recent name="D:\java_lianxi\JAVA\Java-review\project\OA\src\main\webapp\WEB-INF\pages" />
+      <recent name="D:\java_lianxi\JAVA\Java-review\project\OA\src\main\resources\spring" />
+      <recent name="D:\java_lianxi\JAVA\Java-review\project\OA\src\main\java\com.qd.oa" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.qd.oa.common" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.qd.oa.common.dao.impl" />
+      <recent name="com.qd.oa.common.util.verification" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\JAVA\review\project\OA\src\main\resources\hibernate" />
+      <recent name="I:\JAVA\review\project\OA\src\main\webapp\resources\fonts" />
+      <recent name="I:\JAVA\review\project\OA\src\main\webapp\resources" />
+      <recent name="I:\JAVA\review\project\OA\src\main\webapp\images" />
+      <recent name="D:\java_lianxi\JAVA\Java-review\project\OA\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven.OA [tomcat7:run]">
+    <configuration name="ArrayVariance.showArrayVariance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wiley.javainterviewsexposed.chapter08.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="com.wiley.javainterviewsexposed.chapter08.ArrayVariance" />
+      <option name="METHOD_NAME" value="showArrayVariance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OA [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Maven.OA [tomcat7:run]" />
+        <item itemvalue="JUnit.ArrayVariance.showArrayVariance" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5aed0fa6-f1a2-4f08-b6dc-3463d49e10f6" name="Default Changelist" comment="" />
+      <created>1577677559478</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577677559478</updated>
+      <workItem from="1577677563843" duration="11183000" />
+      <workItem from="1577708107763" duration="1197000" />
+      <workItem from="1577710292447" duration="3477000" />
+      <workItem from="1577763596038" duration="10769000" />
+      <workItem from="1577852247802" duration="428000" />
+      <workItem from="1577925115765" duration="15958000" />
+      <workItem from="1578019782215" duration="12145000" />
+      <workItem from="1578045337679" duration="10273000" />
+      <workItem from="1578138706844" duration="2957000" />
+      <workItem from="1578143713564" duration="1602000" />
+      <workItem from="1578192715312" duration="4467000" />
+      <workItem from="1578219105811" duration="2044000" />
+      <workItem from="1578272795656" duration="9195000" />
+      <workItem from="1578357092002" duration="10252000" />
+      <workItem from="1578394705402" duration="8931000" />
+      <workItem from="1578444297795" duration="17805000" />
+      <workItem from="1578533209605" duration="15059000" />
+      <workItem from="1578615869159" duration="12647000" />
+      <workItem from="1578876077981" duration="23309000" />
+      <workItem from="1578961652540" duration="21773000" />
+      <workItem from="1579048257299" duration="20751000" />
+      <workItem from="1579081794064" duration="6586000" />
+      <workItem from="1579221040779" duration="8503000" />
+      <workItem from="1579230813157" duration="349000" />
+      <workItem from="1579232238592" duration="13443000" />
+      <workItem from="1579260258114" duration="5992000" />
+      <workItem from="1579394282864" duration="23115000" />
+      <workItem from="1579500648379" duration="8317000" />
+      <workItem from="1579566493702" duration="15676000" />
+      <workItem from="1579653167319" duration="15329000" />
+      <workItem from="1579741286101" duration="16864000" />
+      <workItem from="1579784743640" duration="113000" />
+      <workItem from="1579928242086" duration="20957000" />
+      <workItem from="1580011711812" duration="16952000" />
+      <workItem from="1580103423381" duration="1021000" />
+      <workItem from="1580357800298" duration="3290000" />
+      <workItem from="1580704836750" duration="1473000" />
+      <workItem from="1581165760805" duration="666000" />
+      <workItem from="1581215180615" duration="32000" />
+      <workItem from="1581221142815" duration="1589000" />
+      <workItem from="1581672919962" duration="172000" />
+      <workItem from="1581775644889" duration="487000" />
+      <workItem from="1582114207144" duration="1301000" />
+      <workItem from="1582293537139" duration="6012000" />
+      <workItem from="1582341879255" duration="16649000" />
+      <workItem from="1582422591871" duration="3842000" />
+      <workItem from="1586785612695" duration="271000" />
+      <workItem from="1589978153673" duration="662000" />
+      <workItem from="1591621888467" duration="471000" />
+      <workItem from="1591787764836" duration="17380000" />
+      <workItem from="1591873586057" duration="2536000" />
+      <workItem from="1591885906031" duration="54000" />
+      <workItem from="1591885968613" duration="6000" />
+      <workItem from="1591886054779" duration="57000" />
+      <workItem from="1592112446284" duration="708000" />
+      <workItem from="1592666897485" duration="861000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1015" y="355" key="FileChooserDialogImpl" timestamp="1592113470909">
+      <screen x="-1600" y="170" width="1600" height="860" />
+    </state>
+    <state x="-1015" y="355" key="FileChooserDialogImpl/0.0.1920.1040/-1600.170.1600.860@-1600.170.1600.860" timestamp="1592113470909" />
+    <state x="702" y="224" key="FileChooserDialogImpl/0.0.1920.1040/-1600.170.1600.860@0.0.1920.1040" timestamp="1591788106256" />
+    <state width="1557" height="472" key="GridCell.Tab.0.bottom" timestamp="1591877556504">
+      <screen x="-1600" y="170" width="1600" height="860" />
+    </state>
+    <state width="1557" height="472" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.170.1600.860@-1600.170.1600.860" timestamp="1591877556504" />
+    <state width="1557" height="472" key="GridCell.Tab.0.center" timestamp="1591877556503">
+      <screen x="-1600" y="170" width="1600" height="860" />
+    </state>
+    <state width="1557" height="472" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.170.1600.860@-1600.170.1600.860" timestamp="1591877556503" />
+    <state width="1557" height="472" key="GridCell.Tab.0.left" timestamp="1591877556503">
+      <screen x="-1600" y="170" width="1600" height="860" />
+    </state>
+    <state width="1557" height="472" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.170.1600.860@-1600.170.1600.860" timestamp="1591877556503" />
+    <state width="1557" height="472" key="GridCell.Tab.0.right" timestamp="1591877556503">
+      <screen x="-1600" y="170" width="1600" height="860" />
+    </state>
+    <state width="1557" height="472" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.170.1600.860@-1600.170.1600.860" timestamp="1591877556503" />
+    <state x="338" y="119" key="new project wizard" timestamp="1591788139543">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="338" y="119" key="new project wizard/0.0.1920.1040/-1600.170.1600.860@0.0.1920.1040" timestamp="1591788139543" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qd/oa/indentity/web/controller/RoleController.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qd/oa/indentity/service/impl/RoleServiceImpl.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qd/oa/indentity/service/impl/RoleServiceImpl.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qd/oa/indentity/service/impl/PopedomServiceImpl.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qd/oa/indentity/web/controller/MenuController.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qd/oa/indentity/web/controller/MenuController.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qd/oa/indentity/web/controller/MenuController.java</url>
+          <line>156</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qd/oa/indentity/service/impl/MenuServiceImpl.java</url>
+          <line>140</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>OA:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Hibernate</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>OA</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
